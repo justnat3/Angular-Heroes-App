@@ -13,6 +13,7 @@ class Hero(object):
         {self.name}
         '''
 
+
 obj = Hero(2, 'duckface')
 
 
