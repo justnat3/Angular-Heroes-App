@@ -16,6 +16,11 @@ class Hero(object):
 
 obj = Hero(2, 'duckface')
 
+try:
+    print(obj)
+except:
+    raise ValueError('you broke you fool')
+
 
 if __name__ == "__main__":
     print(obj)
