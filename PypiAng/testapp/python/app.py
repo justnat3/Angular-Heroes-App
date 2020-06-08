@@ -1,6 +1,4 @@
-import os
-import sys
-
+from flask import Flask
 
 class Hero(object):
     def __init__(self, id, name,):
@@ -13,7 +11,6 @@ class Hero(object):
         {self.name}
         '''
 
-
 obj = Hero(2, 'duckface')
 
 try:
@@ -21,8 +18,7 @@ try:
 except:
     raise ValueError('you broke you fool')
 
-
 if __name__ == "__main__":
-    print(obj)
+    app.run()
 else:
     raise EnvironmentError('You broke it you fool, Do not consume this file.')
